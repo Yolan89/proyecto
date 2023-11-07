@@ -1,0 +1,429 @@
+/*fonts family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/*font-family: 'Oswald', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*body*/
+body{
+    font-family: 'Oswald', sans-serif;
+}
+/*titulo de la pagina*/
+h1{
+    color: beige;
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
+}
+
+section p{
+color: aliceblue;
+font-size: 0.5rem;
+}
+
+/*header*/
+header{
+    background-color: #FF0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+
+/*logo del header*/
+header img{
+    width: 80px;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content:left;
+
+}
+
+nav{
+  width:60%;  
+  height: 100%;
+}
+
+header ul{
+
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+
+}
+
+nav a{
+
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*banner de index*/
+.banner{
+    background-image: url(../img/ajochile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+    text-align: center;
+    text-shadow: 0px 0px 2px rgba(77,70,70,0.6);
+
+}
+
+.imagen{
+
+    width: 15%;
+    height: 30%;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    
+}
+
+/*main*/
+
+.parrafo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/*se define primero en ancho de las imagenes para que se ajusten a la grilla*/
+.grid-p img{
+width: 100%;
+height: 100%;
+}
+
+.grid-p{
+display: grid;
+grid-template-areas: 
+"img1 img2 img3"
+"img4 img5 img6"
+"img7 img8 img9";
+grid-template-columns: 33% 34% 33%;
+grid-template-rows: 300px repeat(2, 350px);
+row-gap: 5px;
+column-gap: 5px;
+padding-right: 5px;
+}
+
+.grid-img1{
+    grid-area: img1;
+}
+.grid-img2{
+    grid-area: img2;
+}
+.grid-img3{
+    grid-area: img3;
+}
+.grid-img4{
+    grid-area: img4;
+}
+.grid-img5{
+    grid-area: img5;
+}
+.grid-img6{
+    grid-area: img6;
+}
+.grid-img7{
+    grid-area: img7;
+}
+.grid-img8{
+    grid-area: img8;
+}
+.grid-img9{
+    grid-area: img9;
+}
+/*sección te ofrecemos*/
+
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+}
+/*sección visitanos*/
+section {
+    color: #FF0000;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px;
+
+}
+section p{
+    color: #FF0000;
+    text-decoration: none;
+    font-size: .8rem;
+}
+section a{
+    color: #FF0000;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+
+
+/*footer */
+
+ul{
+    list-style-type: none;
+}
+
+
+footer{
+    background-color: #FF0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+
+/*imagenes del footer*/
+footer img{
+ width: 50px;
+ margin: 5px;
+
+}
+
+
+footer h6{
+    color: aliceblue;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*login-----*/
+h2{
+    color: #FF0000;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+form{
+    margin-top: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*menú------------------------------------------------------------*/
+h2{
+    margin-bottom: 30px;
+    
+}
+
+.menu-principal img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Organización de la grilla del menú*/
+.menu-principal{
+display: grid;
+grid-template-areas: 
+"tacos1 tacos2 tacos3"
+"tex1 tex2 tex3"
+"caldo1 caldo2 caldo3"
+"tex4 tex5 tex6"
+"pozole1 pozole2 pozole3"
+"tex7 tex8 tex9";
+grid-template-columns: 32% 32% 32%;
+grid-template-rows: 350px 100px 400px 100px 350px 100px ;
+row-gap: 10px;
+column-gap: 8px;
+padding-right: 2px;
+justify-content: center;
+}
+
+.imgm1{
+    grid-area: tacos1;
+}
+.imgm2{
+    grid-area: tacos2;
+}
+
+.imgm3{
+    grid-area: tacos3;
+}
+.pt1{
+    grid-area: tex1;
+}
+.pt2{
+    grid-area: tex2;
+}
+.pt3{
+    grid-area: tex3;
+}
+.imgm4{
+    grid-area: caldo1;
+}
+.imgm5{
+    grid-area: caldo2;
+}
+.imgm6{
+    grid-area: caldo3;
+}
+.pt4{
+    grid-area: tex4;
+}
+.pt5{
+    grid-area: tex5;
+}
+.pt6{
+    grid-area: tex6;
+}
+.imgm7{
+    grid-area: pozole1;
+}
+.imgm8{
+    grid-area: pozole2;
+}
+.imgm9{
+    grid-area: pozole3;
+}
+.pt7{
+    grid-area: tex7;
+}
+.pt8{
+    grid-area: tex8;
+}
+.pt9{
+    grid-area: tex9;
+}
+
+/*registrarse*/
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+}
+ .colorb{
+    background-color: #FF0000;
+ }
+
+
+ /*Conocenos*/
+
+ .medidas{
+    position:inherit;
+ }
+ 
+@media screen  and (max-width:450px) {
+    header{
+        align-items: center;
+        
+    }
+    
+
+    header img{
+        width: 70px;
+        flex-direction: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    nav{
+        width: 100%;
+    }
+/* titulo*/
+    h1{
+        font-size: 3rem;
+    }
+
+    .parrafo{
+        font-size: 1.3rem;
+        margin: 2px;
+    }
+   
+    
+/*grid padre*/
+     .grid-p{
+        grid-template-areas: 
+        "img2"
+        "img3"
+        "img4"
+        "img6";
+         grid-template-columns: 100%;
+         grid-template-rows:300px repeat( 3,300px);
+     }
+     .grid-img1{
+        display: none;
+     }
+     .grid-img5{
+        display: none;
+     }
+
+     .grid-img7{
+        display: none;
+     }
+     .grid-img8{
+        display: none;
+     }
+     .grid-img9{
+        display: none;
+
+     }
+
+ /*media screen  menú*/
+
+ .menu-principal{
+    grid-template-areas: 
+    "tacos1"
+    "tex1"
+    "tacos2"
+    "tex2"
+    "tacos3"
+    "tex3"
+    "caldo1"
+    "tex4"
+    "caldo2"
+    "tex5"
+    "caldo3"
+    "tex6"
+    "pozole1"
+    "tex7"
+    "pozole2"
+    "tex8"
+    "pozole3"
+    "tex9";
+    grid-template-columns: 100%;
+ }
+
+    
+}
