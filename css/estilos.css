@@ -1,0 +1,174 @@
+
+/*header*/
+header {
+  background-color: #FF0000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+header img {
+  width: 80px;
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: left;
+}
+header nav {
+  width: 60%;
+  height: 100%;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul a {
+  color: aliceblue;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  font-size: 1.5rem;
+  color: rgb(241, 197, 131);
+}
+
+/*Banner index main*/
+.banner {
+  background-image: url(../img/ajochile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0px;
+  text-align: center;
+  text-shadow: 0px 0px 2px rgba(77, 70, 70, 0.6);
+  /*titulo de la pagina*/
+}
+.banner h1 {
+  color: beige;
+  font-size: 90px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.parrafo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #FF0000;
+}
+
+.parrafo:hover {
+  color: black;
+}
+
+.grid-p {
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 300px repeat(2, 350px);
+  row-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  padding-right: 5px;
+}
+.grid-p section .grid-p img {
+  width: 100%;
+  height: 100%;
+}
+.grid-p section .grid-img1 {
+  grid-area: img1;
+}
+.grid-p section .grid-img2 {
+  grid-area: img2;
+}
+.grid-p section .grid-img3 {
+  grid-area: img3;
+}
+.grid-p section .grid-img4 {
+  grid-area: img4;
+}
+.grid-p section .grid-img5 {
+  grid-area: img5;
+}
+.grid-p section .grid-img6 {
+  grid-area: img6;
+}
+.grid-p section .grid-img7 {
+  grid-area: img7;
+}
+.grid-p section .grid-img8 {
+  grid-area: img8;
+}
+.grid-p section .grid-img9 {
+  grid-area: img9;
+}
+
+/*sección te ofrecemos*/
+section .espacio {
+  margin: 50px;
+}
+section .espacio .iconos {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  margin: auto;
+}
+
+/*sección visitanos*/
+section {
+  color: #FF0000;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+}
+section h2 {
+  color: #FF0000;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+section p {
+  color: #FF0000;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+section section a {
+  color: #FF0000;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/*footer Index*/
+footer {
+  background-color: #FF0000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer img {
+  width: 50px;
+  margin: 5px;
+}
+footer h4 {
+  color: aliceblue;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@import "media";
+
+/*login*//*# sourceMappingURL=estilos.css.map */
